@@ -1,0 +1,162 @@
+body {
+    background-color: #EFEFEF;
+    margin: 0;
+}
+
+.navbar {
+    width: 100%;
+    height: 125px;
+    background-color: white;
+    border-bottom:7px solid #EFC501;
+    padding-bottom:10px
+}
+
+.logoBookclub {
+    width: 190px;
+    height: 50%;
+    text-align: center;
+    margin-left: 45%;
+    margin-right: 45%;
+    margin-top: 30px;
+}
+
+#sectionForData {
+    width: 80%;
+    height: 400px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.dataCard {
+    background-color: white;
+    width: 70%;
+    height: auto;
+    border-bottom: 2px solid #EFC501;
+    border-top: 2px solid #EFC501;
+    border-left: 2px solid #EFC501;
+    border-right: 2px solid #EFC501;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    float: left;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 2%;
+    text-align: center;
+}
+
+#bookThumbnail {
+    text-align: center;
+    height: 280px;
+    margin-top: 8%;
+
+}
+
+#addtoPortfolio {
+    margin-top: 2%;
+    margin-bottom: 5%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+#containerBook {
+    float: right;
+    width: 60%;
+    margin-right: 2%;
+}
+
+.linksNav {
+margin-top: 1%;
+margin-left: 45%;
+}
+
+.buttonHome {
+padding: 1%;
+padding-left: 2%;
+padding-right: 2%;
+}
+
+.formInput {
+padding-right: 5%;
+padding-bottom: 3%;
+background-color:  #EFEFEF;
+}
+
+#formInputDescription {
+padding-right: 5%;
+padding-bottom: 3%;
+background-color:  #EFEFEF;
+}
+
+.formClass {
+    margin-left: 5%;
+}
+
+/** NAV **/
+.shoppingIcon {
+    height: 30px;
+    width: 30px;
+    display: block;
+    float: right;
+    margin-right: 10%;
+}
+
+.userIcon {
+    height: 30px;
+    width: 30px;
+    display: block;
+    color:black;
+    float: right;
+    position: relative;
+}
+
+.divForNav {
+    float: right;
+    width: 3%;
+}
+
+
+/** DROPDOWN CONTENT **/
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    right: 0;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #f1f1f1}
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  .profileDropdownList {
+      list-style: none;
+      padding: 0;
+  }
+  
+  #arrowBack {
+      height: 40px;
+      margin-top: 1%;
+      margin-left: 1%;
+    }

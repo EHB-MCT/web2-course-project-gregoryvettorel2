@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="searchScript.js"></script>
+    <link rel="stylesheet" href="homePageStyle.css">
+   <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title>Bookstore</title>
+</head>
+<body>
+    
+<nav class="navbar">
+    <a href="/front/homepage.html"><img src="img/logo.png" alt="Bookclub logo" class="logoBookclub"></a>
+<div class="divForNav">
+    <div class="dropdown">
+    <img src="/front/img/user-icon.svg" alt="user-icon" class="userIcon" id="dropbtn">
+    <div class="dropdown-content" id="dropdown-content">
+        <ul class="profileDropdownList">
+    <li><a href="/front/myPortfolio.html">My Portfolio</a></li>
+    <li><a href="#">Log Out</a></li>
+    </ul>
+    </div>
+    </div>
+</div>
+
+</nav>
+
+<div class="divForSearchBar">
+<h2 class="titleSearchBar">Search for your book</h2>
+
+<form id="searchform">
+<input type="text" class="searchBarHome" id="inputTitle">
+<br>
+<button type="submit" class="submitButtonSearch" value="submit">Search</button>
+</form>
+
+</div>
+
+<div class="divForAccountOptions">
+<p>You don't have an account?</p>
+<a href="/front/signUp.html"><input type="submit" value="Sign up" class="signUpAndLogInButton"></a>
+<p>Already have an account?</p>
+<a href="/front/logIn.html"><input type="submit" value="Log in" class="signUpAndLogInButton"></a>
+</div>
+
+<div id="resultsDiv">
+
+</div>
+
+</body>
+</html>
