@@ -3,7 +3,7 @@ console.log('script loaded');
 window.onload = () => {
 
     async function runTest() {
-        const resp = await fetch('http://localhost:3000/api/books');
+        const resp = await fetch('https://web2-course-project-gregvetto.herokuapp.com/api/books');
         const data = await resp.json();
 
         console.log(data);
