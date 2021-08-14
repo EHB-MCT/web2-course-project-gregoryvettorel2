@@ -78,6 +78,18 @@ window.onload = () => {
 
             appendElement.insertAdjacentHTML('afterbegin', htmlString)
 
+            
+            //Test voor data naar BE te senden
+            /**
+            document.getElementById(`addtoPortfolio${i}`).addEventListener('submit', sendData);
+
+            function sendData() {
+                console.log("button clicked");
+            newData = document.getElementById(`addtoPortfolio${i}`).parentElement;
+            console.log(newData);
+            };
+            */
+
             //Boek instantie
             let book = {
                 "title": title,
