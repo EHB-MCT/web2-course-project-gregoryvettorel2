@@ -77,8 +77,8 @@ window.onload = () => {
             <img src="${image}" id="bookThumbnail">
             <div id="containerBook">
             <div class="divTitles"><p><b>Title:</b></p><p id="smallText">${title}</p></div><br>
-            <div class="divTitles"><p><b>Published date:</b></p><p id="smallText">${published}</p></div><br>
             <div class="divTitles"><b><p>Author:</b></p><p id="smallText">${author}</p></div><br>
+            <div class="divTitles"><p><b>Published date:</b></p><p id="smallText">${published}</p></div><br>
             <div class="divTitles"><p><b>Description:</b></p><p id="smallText">${plot}</p></div><br>
             </div>
             <br>
