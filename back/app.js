@@ -19,7 +19,7 @@ const client = new MongoClient(URI, {
 });
 
 //middleware
-app.use(bodyparser.urlencoded({
+app.use(express.urlencoded({
   extended: true
 }));
 app.use(bodyparser.json());
@@ -40,15 +40,13 @@ bookRouter.route('/books')
   })
   //POST ROUTE (WORKSsssSS)
   .post((req, res) => {
-    console.log(req);
     collection = db.collection("Boeken");
-
+    
     collection.insertOne(req.body).then(result => {
-      console.log(result);
+        console.log(result);
     });
-    res.send(JSON.stringify(result));
-    console.log(result);
-  })
+    res.send('Data is sent to Boeken');
+});
 
 //
 app.use('/api', bookRouter);
