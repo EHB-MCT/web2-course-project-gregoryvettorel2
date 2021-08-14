@@ -41,12 +41,13 @@ bookRouter.route('/books')
   //POST ROUTE (WORKSsssSS)
   .post((req, res) => {
     collection = db.collection("Boeken");
-
+        
     collection.insertOne(req.body).then(result => {
         console.log(result);
     });
     
-  });
+    res.send('Data is sent to Boeken');
+});
 
 //
 app.use('/api', bookRouter);
