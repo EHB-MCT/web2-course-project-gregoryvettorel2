@@ -15,8 +15,8 @@ window.onload = () => {
             const htmlString = `<div class="dataCard">
         <img src="X.png" id="xButton">
         <div class="divTitles"><p><b>Title:</b></p><p id="bookTitle">${data[i].name}</p></div><br>
-        <div class="divTitles"><b><p>Publish year:</b></p><p id="genre">${data[i].publishyear}</p></div><br>
-        <div class="divTitles"><p><b>Author:</b></p><p id="publishYear">${data[i].author}</p></div><br>
+        <div class="divTitles"><b><p>Published date:</b></p><p id="publishYear">${data[i].publishyear}</p></div><br>
+        <div class="divTitles"><p><b>Author:</b></p><p id="author">${data[i].author}</p></div><br>
         <div class="divTitles"><p><b>Description:</b></p><p id="description">${data[i].Plot}</p></div><br>
     </div>`;
 
