@@ -20,14 +20,19 @@
 
 <div class="formClass">
     <form method="post" action="/addbook" enctype="multipart/form-data">
+        
         <label for="title">Title:</label><br>
         <input type="text" id="title" name="title" value="" id="formInputTitle"><br>
-        <label for="publish year">Publish year (in numbers):</label><br>
-        <input type="text" id="Publish year" name="publish_year" value=""id="formInputYear" ><br><br>
-        <label for="publish year">Description:</label><br>
+
+        <label for="publisheddate">Published date:</label><br>
+        <input type="text" id="Published" name="published_date" value=""id="formPublishedDate" ><br><br>
+
+        <label for="author">Author:</label><br>
+        <input type="text" id="author" name="author" value="" id="formInputAuthor"><br><br>
+
+        <label for="description">Description:</label><br>
         <input type="text" id="Description" name="description" value="" id="formInputDescription"><br><br>
-        <label for="publish year">Genre:</label><br>
-        <input type="text" id="Genre" name="genre" value="" id="formInputGenre"><br><br>
+
         <input type="submit" value="Submit" id="formSubmitButton">
       </form>
 </div>

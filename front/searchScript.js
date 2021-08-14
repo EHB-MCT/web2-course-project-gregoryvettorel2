@@ -2,6 +2,14 @@ console.log('script loaded');
 //API KEY
 const key = "AIzaSyAFm0I29g1bQu8Npv5Sl_L2SQ4BYZWtAEQ";
 
+function ConfirmLogout() {
+    var confirmLogout = confirm("Are you sure you want to logout?");
+    if (confirm)
+        return true;
+    else
+        return false;
+}
+
 window.onload = () => {
 
     //haalt user input op
