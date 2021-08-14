@@ -80,6 +80,8 @@ window.onload = () => {
             <input style="display:none" type="text" name="publishdate" id="publishdate" for="publishdate" value="${published}">
             <label for="image"></label>
             <input style="display:none" type="text" name="image" id="image" for="image" value="${image}">
+            <label for="preview"></label>
+            <input style="display:none" type="text" name="preview" id="preview" for="preview" value="${data2.items[i].volumeInfo.previewLink}">
 
             <div class="dataCard">
             <img src="${image}" id="bookThumbnail">
