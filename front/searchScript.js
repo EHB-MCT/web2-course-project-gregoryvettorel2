@@ -68,6 +68,7 @@ window.onload = () => {
             }
 
             //Append string
+            //Labels/input for POST + Injected string
             const htmlString = `<form action="https://web2-course-project-gregvetto.herokuapp.com/api/books" method="POST" id="form">
             <label for="name"></label>
             <input style="display:none" type="text" name="name" id="name" for="name" value="${title}">
@@ -79,6 +80,7 @@ window.onload = () => {
             <input style="display:none" type="text" name="publishdate" id="publishdate" for="publishdate" value="${published}">
             <label for="image"></label>
             <input style="display:none" type="text" name="image" id="image" for="image" value="${image}">
+
             <div class="dataCard">
             <img src="${image}" id="bookThumbnail">
             <div id="containerBook">
