@@ -68,7 +68,12 @@ window.onload = () => {
             }
 
             //Append string
-            const htmlString = `<div class="dataCard">
+            const htmlString = `<form action="https://web2-course-project-gregvetto.herokuapp.com/api/books" method="POST" id="form">
+            <input style="display:none" type="text" name="title" id="title" value="${title}">
+            <input style="display:none" type="text" name="title" id="title" value="${published}">
+            <input style="display:none" type="text" name="title" id="title" value="${author}">
+            <input style="display:none" type="text" name="title" id="title" value="${plot}">
+            <div class="dataCard">
             <img src="${image}" id="bookThumbnail">
             <div id="containerBook">
             <div class="divTitles"><p><b>Title:</b></p><p id="smallText">${title}</p></div><br>
@@ -78,35 +83,13 @@ window.onload = () => {
             </div>
             <br>
             <a href="${data2.items[i].volumeInfo.previewLink}" target="_blank"><button id="addtoPortfolio">Preview</button></a>
-            <button id="addtoPortfolio">Add to portfolio</button>
-            </div>`;
+            <input type="submit" class="card-btn" name="submit" id="submit2" value="Add to portfolio">
+            </div></form>`;
 
             //Hier wordt de string geinsert
             const appendElement = document.getElementById("resultsDiv");
 
             appendElement.insertAdjacentHTML('afterbegin', htmlString)
-
-            
-            //Test voor data naar BE te senden
-            /**
-            document.getElementById(`addtoPortfolio${i}`).addEventListener('submit', sendData);
-
-            function sendData() {
-                console.log("button clicked");
-            newData = document.getElementById(`addtoPortfolio${i}`).parentElement;
-            console.log(newData);
-            };
-            */
-
-            //Boek instantie
-            let book = {
-                "title": title,
-                "publisheddate": published,
-                "author":author,
-                "Plot":plot,
-                "image": image
-            };
-            console.log(book);
         }
     }
 

@@ -40,18 +40,14 @@ bookRouter.route('/books')
   })
   //POST ROUTE (WORKSsssSS)
   .post((req, res) => {
-    const randomBook = {
-      name: "booky bookson",
-      publishyear: "0001",
-      Plot: "A little wee lad is born in a barn, can turn water into tequila",
-      author: "his 12 drunk friends"
-    }
+    console.log(req);
     collection = db.collection("Boeken");
 
-    collection.insertOne(randomBook).then(result => {
+    collection.insertOne(req.body).then(result => {
       console.log(result);
     });
-    res.send("data is sent");
+    res.send(JSON.stringify(result));
+    console.log(result);
   })
 
 //
