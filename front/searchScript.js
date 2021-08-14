@@ -77,6 +77,8 @@ window.onload = () => {
             <input style="display:none" type="text" name="Plot" id="Plot" for="Plot" value="${plot}">
             <label for="publishdate"></label>
             <input style="display:none" type="text" name="publishdate" id="publishdate" for="publishdate" value="${published}">
+            <label for="image"></label>
+            <input style="display:none" type="text" name="image" id="image" for="image" value="${image}">
             <div class="dataCard">
             <img src="${image}" id="bookThumbnail">
             <div id="containerBook">
