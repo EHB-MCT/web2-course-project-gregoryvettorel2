@@ -41,12 +41,9 @@ bookRouter.route('/books')
   //POST ROUTE (WORKSsssSS)
   .post((req, res) => {
     collection = db.collection("Boeken");
-    lala = req.body;
-    lala.json();
-    lala = JSON.stringify(lala);
+    document.preventDefault();
+    
     collection.insertOne(req.body).then(result => {
-      result.json();
-      result=JSON.stringify(result);
         console.log(result);
     });
     
