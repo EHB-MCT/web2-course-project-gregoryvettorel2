@@ -41,8 +41,7 @@ bookRouter.route('/books')
   //POST ROUTE (WORKSsssSS)
   .post((req, res) => {
     collection = db.collection("Boeken");
-    document.preventDefault();
-    
+        
     collection.insertOne(req.body).then(result => {
         console.log(result);
     });

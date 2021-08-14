@@ -69,10 +69,10 @@ window.onload = () => {
 
             //Append string
             const htmlString = `<form action="https://web2-course-project-gregvetto.herokuapp.com/api/books" method="POST" id="form">
-            <input style="display:none" type="text" name="name" id="name" for="name" value="${title}">
-            <input style="display:none" type="text" name="author" id="author" for="author" value="${author}">
-            <input style="display:none" type="text" name="Plot" id="Plot" for="author" value="${plot}">
-            <input style="display:none" type="text" name="publishdate" id="publishdate" for="author" value="${published}">
+            <input style="display:none" type="text" name="name" id="name" value="${title}">
+            <input style="display:none" type="text" name="author" id="author" value="${author}">
+            <input style="display:none" type="text" name="Plot" id="Plot" value="${plot}">
+            <input style="display:none" type="text" name="publishdate" id="publishdate" value="${published}">
             <div class="dataCard">
             <img src="${image}" id="bookThumbnail">
             <div id="containerBook">
