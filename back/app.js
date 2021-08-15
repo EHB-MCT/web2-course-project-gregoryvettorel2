@@ -46,7 +46,7 @@ bookRouter.route('/books')
         console.log(result);
     });
     
-    res.send("Book is added to portfolio");
+    res.redirect("https://web2-frontend-gregvetto.herokuapp.com/index.html");
 });
 
 //Route voor DELETE
