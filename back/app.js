@@ -64,7 +64,7 @@ bookRouter.route('/bookRemove')
 app.use('/api', bookRouter);
 
 app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname + '/info.html'))
+  res.sendFile(path.join(__dirname, '/public/info.html'));
 });
 
 //Localhost server
