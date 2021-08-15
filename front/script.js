@@ -36,7 +36,6 @@ window.onload = () => {
         <div class="divTitles"><b><p>Published date:</b></p><p id="publishYear">${data[i].publishdate}</p></div><br>
         <input type="submit" id="submit" name="submit" value="Delete from portfolio">
         </form>
-        <a href="${data[i].preview}" target="_blank"><button id="addtoPortfolio">Preview</button></a>
         </div>
     </div>`;
 
@@ -47,3 +46,4 @@ window.onload = () => {
     }
     runTest();
 }
+//        <a href="${data[i].preview}" target="_blank"><button id="addtoPortfolio">Preview</button></a>
