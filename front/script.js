@@ -13,7 +13,7 @@ window.onload = () => {
         for (let i = 0; i < data.length; i++) {
             // console.log(data[i].name);
            // console.log(data[i].image);
-            const htmlString = `<form action="https://web2-course-project-gregvetto.herokuapp.com/api/books" method="DELETE" id="form">
+            const htmlString = `<form action="https://web2-course-project-gregvetto.herokuapp.com/api/bookRemove" method="POST" id="form">
             <label for="name"></label>
             <input style="display:none" type="text" name="name" id="name" for="name" value="${data[i].name}">
             <label for="author"></label>
@@ -34,7 +34,7 @@ window.onload = () => {
         <div class="divTitles"><p><b>Author:</b></p><p id="author">${data[i].author}</p></div><br>
         <div class="divTitles"><p><b>Description:</b></p><p id="description">${data[i].Plot}</p></div><br>
         <div class="divTitles"><b><p>Published date:</b></p><p id="publishYear">${data[i].publishdate}</p></div><br>
-        <input type="submit" id="addtoPortfolio" value="Delete from portfolio">
+        <input type="submit" id="submit" name="submit" value="Delete from portfolio">
         </form>
         <a href="${data[i].preview}" target="_blank"><button id="addtoPortfolio">Preview</button></a>
         </div>

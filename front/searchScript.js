@@ -70,7 +70,7 @@ window.onload = () => {
 
             //Append string
             //Labels/input for POST + Injected string
-            const htmlString = `<form action="https://web2-course-project-gregvetto.herokuapp.com/api/bookRemove" method="DELETE" id="form">
+            const htmlString = `<form action="https://web2-course-project-gregvetto.herokuapp.com/api/books" method="POST" id="form">
             <label for="name"></label>
             <input style="display:none" type="text" name="name" id="name" for="name" value="${title}">
             <label for="author"></label>

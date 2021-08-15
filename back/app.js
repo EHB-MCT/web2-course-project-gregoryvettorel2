@@ -51,7 +51,7 @@ bookRouter.route('/books')
 
 //Route voor DELETE
 bookRouter.route('/bookRemove')
-  .delete((req,res) => {
+  .post((req,res) => {
     collection = db.collection("Boeken");
 
     collection.deleteOne(req.body).then(result =>{
