@@ -47,7 +47,7 @@ bookRouter.route('/books')
     });
     
     res.send("Book is added to portfolio");
-})
+});
 
 //Route voor DELETE
 bookRouter.route('/bookRemove')
