@@ -93,7 +93,7 @@ window.onload = () => {
             <div class="divTitles"><p><b>Description:</b></p><p id="smallText">${plot}</p></div><br>
             </div>
             <br>
-            <a href="${data2.items[i].volumeInfo.previewLink}" target="_blank"><button id="addtoPortfolio">Preview</button></a>
+            <button id="addtoPortfolio"><a href="${data2.items[i].volumeInfo.previewLink}" target="_blank" style="text-decoration:none">Preview</a></button>
             <input type="submit" class="card-btn" id="addToPortfolio" value="Add to portfolio">
             </div></form>`;
 
