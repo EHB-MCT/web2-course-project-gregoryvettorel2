@@ -49,13 +49,15 @@ bookRouter.route('/books')
     res.send("Book is added to portfolio");
 })
 
+//Route voor DELETE
+bookRouter.route('/bookRemove')
   .delete((req,res) => {
     collection = db.collection("Boeken");
 
     collection.deleteOne(req.body).then(result =>{
       console.log(result);
     })
-    res.send("Book is deleted from portfolio")
+    res.redirect("https://web2-frontend-gregvetto.herokuapp.com/myPortfolio.html");
   });
 
 //
