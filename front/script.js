@@ -11,7 +11,8 @@ window.onload = () => {
 
 
         for (let i = 0; i < data.length; i++) {
-            console.log(data[i].name)
+            console.log(data[i].name);
+            console.log(data[i].image);
             const htmlString = `<div class="dataCard">
         <img src="X.png" id="xButton">
         <img src="${data[i].image}" id="bookThumbnail">
