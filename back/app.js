@@ -57,7 +57,7 @@ bookRouter.route('/bookRemove')
     collection.deleteOne({
       name:req.body.name
     })
-    res.send("delete gelukt");
+    res.redirect("https://web2-frontend-gregvetto.herokuapp.com/api/bookRemove");
   });
 
 //

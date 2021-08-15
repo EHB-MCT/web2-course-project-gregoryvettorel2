@@ -34,10 +34,9 @@ window.onload = () => {
         <div class="divTitles"><p><b>Author:</b></p><p id="author">${data[i].author}</p></div><br>
         <div class="divTitles"><p><b>Description:</b></p><p id="description">${data[i].Plot}</p></div><br>
         <div class="divTitles"><b><p>Published date:</b></p><p id="publishYear">${data[i].publishdate}</p></div><br>
-        <input type="submit" id="submit" name="submit" value="Delete from portfolio">
-        </form>
-        </div>
-    </div>`;
+        </div><br><input type="submit" id="addToPortfolio" name="submit" value="Delete from portfolio">
+        <button id="addtoPortfolio"><a href="${data[i].preview}" target="_blank" style="text-decoration:none">Preview</a></button>
+    </div></form>`;
 
             const appendElements = document.getElementById("sectionForData");
 
@@ -46,4 +45,3 @@ window.onload = () => {
     }
     runTest();
 }
-//        <a href="${data[i].preview}" target="_blank"><button id="addtoPortfolio">Preview</button></a>
