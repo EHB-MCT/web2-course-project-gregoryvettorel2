@@ -64,8 +64,7 @@ bookRouter.route('/bookRemove')
 app.use('/api', bookRouter);
 
 app.get('/', (req, res) => {
-  res.send('welcome to my nodemon API');
-});
+  res.sendFile(path.join(__dirname + 'info.html'));});
 
 //Localhost server
 app.listen(port, () => {
