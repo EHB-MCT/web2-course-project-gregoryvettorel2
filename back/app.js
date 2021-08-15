@@ -55,7 +55,7 @@ bookRouter.route('/bookRemove')
     collection = db.collection("Boeken");
 
     collection.deleteOne({
-      body:req.body
+      name:req.body.name
     })
     res.send("delete gelukt");
   });
