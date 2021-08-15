@@ -2,6 +2,7 @@ console.log('script loaded');
 //API KEY
 const key = "AIzaSyAFm0I29g1bQu8Npv5Sl_L2SQ4BYZWtAEQ";
 
+//Function for logout prompt, doesn't do anything other than showing prompt
 function ConfirmLogout() {
     var confirmLogout = confirm("Are you sure you want to logout?");
     if (confirm)
@@ -93,7 +94,7 @@ window.onload = () => {
             </div>
             <br>
             <a href="${data2.items[i].volumeInfo.previewLink}" target="_blank"><button id="addtoPortfolio">Preview</button></a>
-            <input type="submit" class="card-btn" name="submit" id="submit2" value="Add to portfolio">
+            <input type="submit" class="card-btn" name="submit" id="submit" value="Add to portfolio">
             </div></form>`;
 
             //Hier wordt de string geinsert

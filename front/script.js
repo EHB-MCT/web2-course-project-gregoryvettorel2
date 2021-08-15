@@ -14,7 +14,7 @@ window.onload = () => {
             console.log(data[i].name)
             const htmlString = `<div class="dataCard">
         <img src="X.png" id="xButton">
-        <img src="${image}" id="bookThumbnail">
+        <img src="${data[i].image}" id="bookThumbnail">
         <div id="containerBook">
         <div class="divTitles"><p><b>Title:</b></p><p id="bookTitle">${data[i].name}</p></div><br>
         <div class="divTitles"><p><b>Author:</b></p><p id="author">${data[i].author}</p></div><br>
