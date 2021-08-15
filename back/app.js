@@ -46,7 +46,7 @@ bookRouter.route('/books')
         console.log(result);
     });
     
-    res.send('Data is sent to Boeken');
+    res.send('Book is added to portfolio');
 });
 
 //
