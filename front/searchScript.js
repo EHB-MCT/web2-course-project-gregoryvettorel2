@@ -94,7 +94,7 @@ window.onload = () => {
             </div>
             <br>
             <a href="${data2.items[i].volumeInfo.previewLink}" target="_blank"><button id="addtoPortfolio">Preview</button></a>
-            <input type="submit" class="card-btn" name="submit" id="submit" value="Add to portfolio">
+            <input type="submit" class="card-btn" id="addToPortfolio" value="Add to portfolio">
             </div></form>`;
 
             //Hier wordt de string geinsert

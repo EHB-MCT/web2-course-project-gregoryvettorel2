@@ -46,8 +46,17 @@ bookRouter.route('/books')
         console.log(result);
     });
     
-    res.send('Book is added to portfolio');
-});
+    res.send("Book is added to portfolio");
+})
+
+  .delete((req,res) => {
+    collection = db.collection("Boeken");
+
+    collection.deleteOne(req.body).then(result =>{
+      console.log(result);
+    })
+    res.send("Book is deleted from portfolio")
+  });
 
 //
 app.use('/api', bookRouter);
